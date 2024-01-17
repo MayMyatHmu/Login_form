@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(106, 170, 235), #147ee9);
+            color: white;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            padding: 20px 0;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-left: 32px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .form-control {
+            border-radius: 30px;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            width: 100%;
+            border-radius: 50px;
+
+        }
+
+        .form-check-label {
+            font-size: small;
+        }
+
+        .forgot-password-link {
+            display: block;
+            text-align: right;
+            font-size: small;
+            margin-top: 5px; /* Adjusted margin */
+        }
+
+        .form-check {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sign-up-label {
+            display: block;
+            text-align: center;
+            margin-top: 20px; /* Centered margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="margin-top: 75px;">
+            <div class="header">
+                <h1>Hi,<br>Welcome back</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label visually-hidden">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label visually-hidden">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <div>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <label class="form-check-label forgot-password-link">Forgot password?</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">LOGIN</button>
+                    <label class="form-check-label sign-up-label" for="exampleCheck1" style="margin-bottom: 75px;">Don't have account? <a href="#">Sign up</a></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/pooper.min.js"></script>
+</body>
+</html>
